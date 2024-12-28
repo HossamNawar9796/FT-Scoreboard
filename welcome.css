@@ -1,0 +1,97 @@
+/* إعدادات عامة للجسم */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffffff, #bcd0f7);
+    font-family: "Chewy", serif;
+
+    overflow: hidden;
+}
+
+/* الحاوية الرئيسية */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* النص الرئيسي مع الأنيميشن */
+.welcome-text {
+    font-size: 140px;
+    color: rgba(96, 104, 246, 0.77);
+    letter-spacing: 30px;
+    margin-bottom: 20px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* الصورة */
+.center-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation: zoomIn 3s ease-in-out;
+}
+
+/* الزر */
+.action-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: white;
+    background: #dd2616;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    animation: slideIn 2s ease-in-out;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.action-button:hover {
+    transform: scale(1.1);
+    background: #ff5a4d;
+}
+
+/* تأثير Fade In للنص */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* تأثير Zoom In للصورة */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* تأثير Slide In للزر */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
