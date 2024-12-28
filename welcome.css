@@ -25,9 +25,9 @@ body {
 
 /* النص الرئيسي مع الأنيميشن */
 .welcome-text {
-    font-size: 140px;
+    font-size: 90px;
     color: rgba(96, 104, 246, 0.77);
-    letter-spacing: 30px;
+    letter-spacing: 10px;
     margin-bottom: 20px;
     animation: fadeIn 3s ease-in-out;
 }
